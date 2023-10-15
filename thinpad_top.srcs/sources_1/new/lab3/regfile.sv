@@ -16,7 +16,7 @@ always_ff @(posedge clk) begin
     if (reset) begin
         rf[0] <= 16'h0000;
     end else begin
-        if ((rf_we == 1) && (rf_waddr != 4'b0)) begin
+        if ((rf_we == 1) && (rf_waddr != 5'b0)) begin
             rf[rf_waddr] <= rf_wdata;
         end 
     end
