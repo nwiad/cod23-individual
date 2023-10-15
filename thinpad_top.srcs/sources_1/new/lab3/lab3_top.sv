@@ -106,8 +106,61 @@ module lab3_top (
   /* =========== Demo code end =========== */
 
   // TODO: 内部信号声明
-
+  logic [15:0] alu_a, alu_b, alu_y;
+  logic [3:0] alu_op;
+  logic [15:0] rf_rdata_a, rf_rdata_b, rf_wdata;
+  logic [4:0] rf_raddr_a, rf_raddr_b, rf_waddr;
+  logic rf_we;
+  logic trigger;
   // TODO: 实验模块例化
+  trigger u_trigger (
+    .clk(clk_10M),
+    .reset(reset_of_clk10M),
+    .push_btn(push_btn),
+    .trigger(trigger)
+  );
 
+  alu u_alu (
+    .alu_a(alu_a),
+    .alu_b(alu_b),
+    .alu_y(alu_y),
+    .alu_op(alu_op)
+  );
+
+  regfile u_regfile (
+    .clk(clk_10M),
+    .reset(reset_of_clk10M),
+    .rf_rdata_a(rf_rdata_a),
+    .rf_rdata_b(rf_rdata_b),
+    .rf_wdata(rf_wdata),
+    .rf_raddr_a(rf_raddr_a),
+    .rf_raddr_b(rf_raddr_b),
+    .rf_waddr(rf_waddr),
+    .rf_we(rf_we)
+  );
+
+  controller u_controller (
+    .clk(clk_10M),
+    .reset(reset_of_clk10M),
+    .rf_rdata_a(rf_rdata_a),
+    .rf_rdata_b(rf_rdata_b),
+    .rf_wdata(rf_wdata),
+    .rf_raddr_a(rf_raddr_a),
+    .rf_raddr_b(rf_raddr_b),
+    .rf_waddr(rf_waddr),
+    .rf_we(rf_we),
+    .alu_a(alu_a),
+    .alu_b(alu_b),
+    .alu_y(alu_y),
+    .alu_op(alu_op),
+    .step(trigger),
+    .dip_sw(dip_sw),
+    .leds(leds)
+  );
+
+  SEG7_LUT u_seg7_lut (
+    .iDIG(leds),
+    .oSEG1(dpy0)
+  );
 
 endmodule
