@@ -3,62 +3,118 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="lab3_tb_behav.wdb" id="1">
+      <db_ref path="lab5_tb_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="lab3_tb" />
+            <top_module name="lab5_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="36648612fs"></ZoomStartTime>
-      <ZoomEndTime time="39032613fs"></ZoomEndTime>
-      <Cursor1Time time="113400000fs"></Cursor1Time>
+      <ZoomStartTime time="89744878fs"></ZoomStartTime>
+      <ZoomEndTime time="92182879fs"></ZoomEndTime>
+      <Cursor1Time time="91424878fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="181"></NameColumnWidth>
-      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+      <NameColumnWidth column_width="149"></NameColumnWidth>
+      <ValueColumnWidth column_width="160"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="10" />
-   <wvobject fp_name="/lab3_tb/dut/clk_10M" type="logic">
-      <obj_property name="ElementShortName">clk_10M</obj_property>
-      <obj_property name="ObjectShortName">clk_10M</obj_property>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/clk_i" type="logic">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/reset_of_clk10M" type="logic">
-      <obj_property name="ElementShortName">reset_of_clk10M</obj_property>
-      <obj_property name="ObjectShortName">reset_of_clk10M</obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/rst_i" type="logic">
+      <obj_property name="ElementShortName">rst_i</obj_property>
+      <obj_property name="ObjectShortName">rst_i</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/push_btn" type="logic">
-      <obj_property name="ElementShortName">push_btn</obj_property>
-      <obj_property name="ObjectShortName">push_btn</obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/dip_sw_i" type="array">
+      <obj_property name="ElementShortName">dip_sw_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dip_sw_i[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/trigger" type="logic">
-      <obj_property name="ElementShortName">trigger</obj_property>
-      <obj_property name="ObjectShortName">trigger</obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/alu_a" type="array">
-      <obj_property name="ElementShortName">alu_a[15:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_a[15:0]</obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/addr" type="array">
+      <obj_property name="ElementShortName">addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/alu_b" type="array">
-      <obj_property name="ElementShortName">alu_b[15:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_b[15:0]</obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/data" type="array">
+      <obj_property name="ElementShortName">data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/alu_y" type="array">
-      <obj_property name="ElementShortName">alu_y[15:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_y[15:0]</obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/wb_ack_i" type="logic">
+      <obj_property name="ElementShortName">wb_ack_i</obj_property>
+      <obj_property name="ObjectShortName">wb_ack_i</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/alu_op" type="array">
-      <obj_property name="ElementShortName">alu_op[3:0]</obj_property>
-      <obj_property name="ObjectShortName">alu_op[3:0]</obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/wb_dat_i" type="array">
+      <obj_property name="ElementShortName">wb_dat_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_dat_i[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/leds" type="array">
-      <obj_property name="ElementShortName">leds[15:0]</obj_property>
-      <obj_property name="ObjectShortName">leds[15:0]</obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/wb_cyc_o" type="logic">
+      <obj_property name="ElementShortName">wb_cyc_o</obj_property>
+      <obj_property name="ObjectShortName">wb_cyc_o</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab3_tb/dut/u_regfile/rf" type="array">
-      <obj_property name="ElementShortName">rf[31:0][15:0]</obj_property>
-      <obj_property name="ObjectShortName">rf[31:0][15:0]</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/wb_stb_o" type="logic">
+      <obj_property name="ElementShortName">wb_stb_o</obj_property>
+      <obj_property name="ObjectShortName">wb_stb_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/wb_adr_o" type="array">
+      <obj_property name="ElementShortName">wb_adr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_adr_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/wb_dat_o" type="array">
+      <obj_property name="ElementShortName">wb_dat_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_dat_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/wb_sel_o" type="array">
+      <obj_property name="ElementShortName">wb_sel_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_sel_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/u_lab5_master/wb_we_o" type="logic">
+      <obj_property name="ElementShortName">wb_we_o</obj_property>
+      <obj_property name="ObjectShortName">wb_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/wb_cyc_i" type="logic">
+      <obj_property name="ElementShortName">wb_cyc_i</obj_property>
+      <obj_property name="ObjectShortName">wb_cyc_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/wb_stb_i" type="logic">
+      <obj_property name="ElementShortName">wb_stb_i</obj_property>
+      <obj_property name="ObjectShortName">wb_stb_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/wb_ack_o" type="logic">
+      <obj_property name="ElementShortName">wb_ack_o</obj_property>
+      <obj_property name="ObjectShortName">wb_ack_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/wb_adr_i" type="array">
+      <obj_property name="ElementShortName">wb_adr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_adr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/wb_dat_i" type="array">
+      <obj_property name="ElementShortName">wb_dat_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_dat_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/wb_dat_o" type="array">
+      <obj_property name="ElementShortName">wb_dat_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_dat_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/wb_sel_i" type="array">
+      <obj_property name="ElementShortName">wb_sel_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_sel_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/wb_we_i" type="logic">
+      <obj_property name="ElementShortName">wb_we_i</obj_property>
+      <obj_property name="ObjectShortName">wb_we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab5_tb/dut/sram_controller_base/sram_addr" type="array">
+      <obj_property name="ElementShortName">sram_addr[19:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_addr[19:0]</obj_property>
    </wvobject>
 </wave_config>

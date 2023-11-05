@@ -61,7 +61,7 @@ module sram_controller #(
       wb_ack_o <= 1'b0;
       wb_dat_o <= 32'b0;
       sram_addr <= 20'b0;
-      sram_be_n <= 4'b0000;
+      sram_be_n <= 4'b1111;
       sram_data_t_reg <= 1'b1;
       sram_data_o_reg <= 32'b0;
       sram_ce_n_reg <= 1'b1;
