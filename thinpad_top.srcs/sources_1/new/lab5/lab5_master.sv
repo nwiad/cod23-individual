@@ -165,6 +165,12 @@ module lab5_master #(
           addr <= addr + 32'h0000_0004;
           state <= IDLE;
         end
+
+        default: begin
+          wb_cyc_o <= 1'b0;
+          wb_stb_o <= 1'b0;
+          state <= IDLE;
+        end
       endcase
     end
   end

@@ -126,6 +126,10 @@ module sram_controller #(
           state <= STATE_IDLE;
         end
 
+        default: begin
+          wb_ack_o <= 1'b0;
+          state <= STATE_IDLE;
+        end
       endcase
 
     end
