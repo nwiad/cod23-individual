@@ -62,9 +62,26 @@ module lab5_tb;
     // end
 
     // 模拟 PC 通过串口，向 FPGA 发送字符
-    uart.pc_send_byte(8'h32); // ASCII '2'
+    // 依次向串口发送 100、138、101、103、189、220、12、165、203、171
+    uart.pc_send_byte(8'd100); // ASCII '2'
     #10000;
-    uart.pc_send_byte(8'h33); // ASCII '3'
+    uart.pc_send_byte(8'd138); // ASCII '3'
+    #10000;
+    uart.pc_send_byte(8'd101); // ASCII 'e'
+    #10000;
+    uart.pc_send_byte(8'd103); // ASCII 'g'
+    #10000;
+    uart.pc_send_byte(8'd189); // ASCII '�'
+    #10000;
+    uart.pc_send_byte(8'd220); // ASCII '�'
+    #10000;
+    uart.pc_send_byte(8'd12);  // ASCII '�'
+    #10000;
+    uart.pc_send_byte(8'd165); // ASCII '�'
+    #10000;
+    uart.pc_send_byte(8'd203); // ASCII '�'
+    #10000;
+    uart.pc_send_byte(8'd171); // ASCII '�'
 
     // PC 接收到数据后，会在仿真窗口中打印出数据
 

@@ -109,6 +109,7 @@ module lab5_master #(
           if (wb_ack_i == 1'b1) begin
             wb_cyc_o <= 1'b0;
             wb_stb_o <= 1'b0;
+            wb_we_o <= 1'b0;
             state <= WRITE_SRAM_DONE;
           end
         end
@@ -163,6 +164,12 @@ module lab5_master #(
 
         WRITE_DATA_DONE: begin
           addr <= addr + 32'h0000_0004;
+          state <= IDLE;
+        end
+
+        default: begin
+          wb_cyc_o <= 1'b0;
+          wb_stb_o <= 1'b0;
           state <= IDLE;
         end
       endcase
