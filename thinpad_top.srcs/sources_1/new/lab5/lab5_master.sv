@@ -156,7 +156,6 @@ module lab5_master #(
           if (wb_ack_i == 1'b1) begin
             wb_cyc_o <= 1'b0;
             wb_stb_o <= 1'b0;
-            wb_sel_o <= 4'b0000;
             wb_we_o <= 1'b0;
             state <= WRITE_DATA_DONE;
           end
