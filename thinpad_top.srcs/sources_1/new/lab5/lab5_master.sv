@@ -98,8 +98,8 @@ module lab5_master #(
           wb_cyc_o <= 1'b1;
           wb_stb_o <= 1'b1;
           wb_adr_o <= addr;
-          wb_dat_o <= wb_dat_i << (addr[1:0] << 3); // 左移
-          data <= wb_dat_i;
+          wb_dat_o <= (wb_dat_i & 32'h0000_00FF) << (addr[1:0] << 3); // 左移
+          data <= wb_dat_i & 32'h0000_00FF;
           wb_sel_o <= 4'b0001 << (addr[1:0]); // 左移
           wb_we_o <= 1'b1;
           state <= WRITE_SRAM_ACTION;
