@@ -35,36 +35,3 @@
 `define RS2 inst_reg[24:20]
 
 `define PC_INIT 32'h8000_0000
-
-// x0 / zero
-// x1 / ra (return address)
-// x2 / sp (stack pointer)
-// x3 / gp (global pointer)
-// x4 / tp (thread pointer)
-// x5 / t0 (temporary)
-// x6 / t1
-// x7 / t2
-// x8 / s0 / fp (saved register, frame pointer)
-// x9 / s1
-// x10 / a0 (function argument, return value)
-// x11 / a1 (function argument, return value)
-// x12 / a2
-// x13 / a3
-// x14 / a4
-// x15 / a5
-// x16 / a6
-// x17 / a7
-// x18 / s2 (saved register)
-// x19 / s3
-// x20 / s4
-// x21 / s5
-// x22 / s6
-// x23 / s7
-// x24 / s8
-// x25 / s9
-// x26 / s10
-// x27 / s11
-// x28 / t3
-// x29 / t4
-// x30 / t5
-// x31 / t6

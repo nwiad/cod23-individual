@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="499194166fs"></ZoomStartTime>
-      <ZoomEndTime time="500401167fs"></ZoomEndTime>
-      <Cursor1Time time="500200000fs"></Cursor1Time>
+      <ZoomStartTime time="268896500fs"></ZoomStartTime>
+      <ZoomEndTime time="269502501fs"></ZoomEndTime>
+      <Cursor1Time time="269211000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="176"></NameColumnWidth>
-      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="44" />
    <wvobject fp_name="/lab6_tb/dut/u_lab6_multicycle_master/clk_i" type="logic">
@@ -83,6 +83,7 @@
    <wvobject fp_name="/lab6_tb/dut/u_lab6_multicycle_master/imm_gen_i" type="array">
       <obj_property name="ElementShortName">imm_gen_i[31:0]</obj_property>
       <obj_property name="ObjectShortName">imm_gen_i[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/lab6_tb/dut/u_lab6_multicycle_master/state" type="array">
       <obj_property name="ElementShortName">state[2:0]</obj_property>
